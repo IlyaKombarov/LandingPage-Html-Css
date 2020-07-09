@@ -1,0 +1,338 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #1a2b49;
+}
+body,
+html {
+  overflow-x: hidden;
+}
+nav {
+  margin: 0 auto;
+  max-width: 1100px;
+  width: 100%;
+}
+#checkbox-menu,
+.toggle {
+  display: none;
+}
+.menu {
+  padding: 0;
+  margin: 0;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+}
+.menu li a {
+  color: black;
+  text-decoration: none;
+  align-self: center;
+  font-size: 13px;
+  padding: 10px 15px;
+  transition: background 0.2s linear;
+}
+.menu li a:hover {
+  background: #ed6919;
+  border-radius: 3px;
+}
+.menu li a.logo {
+  font-size: 25px;
+  margin-right: 240px;
+}
+.menu li a.contacts {
+  margin-right: 100px;
+}
+.wrapper {
+  margin: 0 auto;
+  max-width: 1100px;
+  width: 100%;
+}
+.intro {
+  margin-top: 25px;
+  display: flex;
+  justify-content: flex-end;
+}
+.intro-img {
+  background-image: url(image/blog.jpg);
+  width: 965px;
+  height: 640px;
+  border: solid 6px #fff;
+  outline: solid 6px #000;
+    }
+    
+}
+.intro .intro-text {
+  position: absolute;
+  font-size: 62px;
+  right: 966px;
+  top: 150px;
+  color: #e45e0a;
+}
+.intro-contacts {
+  background-color: #e45e0a;
+  max-width: 590px;
+  position: absolute;
+  right: 405px;
+  top: 637px;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 50px;
+}
+.intro-contacts i {
+  color: #fff;
+  margin-right: 30px;
+}
+.intro-contacts p {
+  font-size: 18px;
+  margin-right: 60px;
+}
+.stats {
+  display: flex;
+  margin-top: 130px;
+}
+.stats-line {
+  display: flex;
+}
+.stats-text {
+  padding-right: 40px;
+}
+.stats-text h2 {
+  font-style: 40px;
+  margin-bottom: 70px;
+}
+.stats-text p {
+  margin-top: 50px;
+  font-size: 13px;
+  line-height: 27px;
+}
+.square {
+  width: 200px;
+  height: 200px;
+  background-color: #ebebeb;
+  margin: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 2px;
+}
+.stats-square {
+  font-size: 40px;
+  color: #e45e0a;
+  margin-bottom: 15px;
+}
+.square-text {
+  font-size: 14px;
+}
+.tours {
+    background: #ebebeb;
+    padding: 60px 0;
+  }
+  .tour h2 {
+    margin-bottom: 85px;
+    font-size: 40px;
+  }
+  .card {
+    max-width: 348px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  }
+  .card-containeer {
+      padding: 13px;
+  }
+  .card-info{
+      display: flex;
+      justify-content: space-between;
+      margin-top: 25px;
+  }
+  .card-info .money{
+      font-size: 18px;
+      color: #e45e0a;
+  }
+  .card-info i{
+      margin-right: 1.5px;
+      color: rgb(241, 238, 9);
+  }
+  .card-info span:first-child{
+      margin-right: 1px;
+  }
+  .card:hover{
+      background: #fafaf9;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+  }    
+  .cards{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2 1fr);
+      grid-column-gap: 0px;
+      grid-row-gap: 30px;
+  }
+  .tour input[type=text]{
+      margin-top: 50px;
+      width: 300px;
+      height: 70px;
+      border: none;
+      background-image: url(image/search.jpg);
+      background-repeat: no-repeat;
+      background-position: 27px;
+      outline: none;
+      padding-left: 62px;
+      font-size: 15px;
+      color: #91d9e;
+      border-top-left-radius: 4px;
+      border-bottom-left-radius: 4px;
+  }
+  .tour input[type=submit]{
+      width: 115px;
+      border: none;
+      height: 70px;
+      background:#e45e0a;
+      font-size: 15px;
+      margin-left: -4px;
+      border-top-right-radius: 4px;
+      border-bottom-right-radius: 4px;
+  }
+  .all{
+      width: 250px;
+      height: 70px;
+      border: none;
+      border-radius: 4px;
+      margin-left: 40px;
+      margin-top: 52px;
+      font-size: 15px;
+  }
+  .buttons-search{
+      display: flex;
+  }
+  .step h2{
+      margin-top: 55px;
+      font-size: 40px;
+      margin-bottom: 35px;
+  }
+  .steps-text{
+      line-height: 27px;
+  }
+
+@media screen and (max-width: 765px) {
+  .toggle {
+    clear: both;
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+    width: 100%;
+    color: #fff;
+    background: #003580;
+    transition: all 0.1s linear;
+  }
+  .toggle:hover {
+    background: #230479;
+  }
+  #checkbox-menu:checked + label .touch li {
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.7s linear;
+  }
+  #checkbox-menu:checked + label .touch {
+    height: 350px;
+  }
+  .menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 0px;
+    transition: height 0.3s linear;
+  }
+  .menu li {
+    display: flex;
+    align-self: center;
+    width: 95%;
+    opacity: 0;
+    visibility: hidden;
+  }
+  .menu li a {
+    width: 95%;
+    text-align: center;
+    align-self: center;
+    align-content: center;
+  }
+  .menu li a.logo {
+    font-size: 21px;
+    margin-right: 0px;
+  }
+  .menu li a.contacts {
+    margin-right: 0px;
+  }
+  .intro {
+    margin-top: 0;
+    display: block;
+    max-width: 100%;
+  }
+  .intro-img {
+    background-position: bottom 0px right 200px;
+  }
+  .intro .intro-text {
+    position: relative;
+    font-size: 35px;
+    right: -10px;
+    text-outline: 95px;
+  }
+  .intro .intro-contacts {
+    right: 0;
+    top: -60px;
+    padding: 20px 10px;
+    position: relative;
+  }
+  .intro-contacts i {
+    margin-right: 10px;
+  }
+  .intro-contacts p {
+    font-size: 14px;
+    margin-right: 0;
+  }
+  .stats {
+    margin-top: 0;
+    flex-direction: column;
+  }
+  .stats-text {
+    padding: 10px;
+  }
+  .stats-text h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  .stats-text p {
+    margin-top: 5px;
+    font-size: 13px;
+    line-height: 18px;
+  }
+  .square {
+    height: 140px;
+    width: 140px;
+}
+.cards{
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 10px;
+    justify-items: center;
+}    
+.tour input[type=text]{
+    margin-top: 20px;
+    width: 130px;
+}
+.buttons-search{
+    flex-direction: column;
+    margin-left: 4%;
+}
+.all{
+    background: #fff;
+    margin-top: 10px;
+    margin-left: 0;
+}
+}
